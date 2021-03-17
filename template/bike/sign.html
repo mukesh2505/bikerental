@@ -1,0 +1,65 @@
+{% load static %}
+{% include './common/head.html %}
+<body>
+  <!-- ======= Header ======= -->
+   {% include './common/menu.html %}
+
+
+  <main id="main" class= "mt-5">
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+
+          <h2> New Registration</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div >
+            <div class="row mt-5">
+              <div style="width:100%">
+                <div class="col-lg-5 mt-5 mt-lg-0" style=" margin:auto auto">
+
+                  <form action="" method="post" role="form" >
+                     {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                        <input type="name" class="form-control" name="name" id="name" placeholder="name" data-rule="name" data-msg="Please enter a valid user"/>
+                        <div class="validate"></div>
+                        </div>
+                    </div>
+                      <div class="form-row">
+                        <div class="col-md-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="email" data-rule="email"/>
+                        <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-6 form-group">
+                        <input type="number" class="form-control" name="mobile" id="mobile" placeholder="mobile.no" />
+                        <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-6 form-group">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" data-rule="password"/>
+                        <div class="validate"></div>
+                        </div>
+                      </div>
+                    <div class="text-center"><button class="btn btn-sm btn-primary" type="submit">Register</button></div>
+                  </form>
+
+
+                </div>
+              </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+
+
+  {% include './common/foot.html%}
